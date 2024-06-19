@@ -8,6 +8,11 @@ import Office2 from './assets/img/office2.jpg'
 import FundoInteligence from './assets/img/fundo-inteligence.png'
 import AbouveHero1 from './assets/img/above-the-hero1.png'
 import AboutCard from './assets/img/fundo-card.png'
+import Founder from './assets/img/founder.png'
+import CounterIcon1 from './assets/img/counter-icon1.png.png'
+import CounterIcon2 from './assets/img/counter-icon2.png.png'
+import CounterIcon3 from './assets/img/counter-icon3.png.png'
+import CounterIcon4 from './assets/img/counter-icon4.png.png'
 
 import Ticket from './assets/svg/exclusive.svg'
 import Leads from './assets/svg/leds.svg'
@@ -28,6 +33,7 @@ function App() {
     backgroundRepeat: 'no-repeat',
     height: '100vh',
     width: '100%',
+    zIndex: '-1'
   }
 
   const estileBackgroundInteligence: React.CSSProperties = {
@@ -37,6 +43,7 @@ function App() {
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     width: '100%',
+    zIndex: '-1'
   }
 
   return (
@@ -173,8 +180,8 @@ function App() {
                   <img src={MagnifyingGlass} alt='lupa' className='intelligence__center__right__cards__card__image__svg' />
                 </figure>
                 <div className='intelligence__center__right__cards__card__descriptions'>
-                  <h1>Cada Detalhe</h1>
-                  <p>Landing pages intuitivas
+                  <h1 className='intelligence__center__right__cards__card__descriptions__title'>Cada Detalhe</h1>
+                  <p className='intelligence__center__right__cards__card__descriptions__text'>Landing pages intuitivas
                     e fáceis de usar</p>
                 </div>
               </div>
@@ -183,12 +190,87 @@ function App() {
                   <img src={Suport} alt='lupa' className='intelligence__center__right__cards__card__image__svg' />
                 </figure>
                 <div className='intelligence__center__right__cards__card__descriptions'>
-                  <h1>Cada Detalhe</h1>
-                  <p>Landing pages intuitivas
+                  <h1 className='intelligence__center__right__cards__card__descriptions__title'>Cada Detalhe</h1>
+                  <p className='intelligence__center__right__cards__card__descriptions__text'>Landing pages intuitivas
                     e fáceis de usar</p>
                 </div>
               </div>
             </div>
+            <div className='intelligence__center__right__founders'>
+              <div className='intelligence__center__right__founders__button-container'>
+                <button className='intelligence__center__right__founders__button-container__button'>
+                  <span>
+                    Whats
+                  </span>
+                </button>
+              </div>
+              <div className='intelligence__center__right__founders__founder'>
+                <div className='intelligence__center__right__founders__founder__image'>
+                  <img src={Founder} alt="" />
+                </div>
+                <div className='intelligence__center__right__founders__founder__description'>
+                  <h1>EDUARDO</h1>
+                  <p>CO-Founder</p>
+                </div>
+              </div>
+              <div className='intelligence__center__right__founders__founder'>
+                <div className='intelligence__center__right__founders__founder__image'>
+                  <img src={Founder} alt="" />
+                </div>
+                <div className='intelligence__center__right__founders__founder__description'>
+                  <h1>Yago Gigeck</h1>
+                  <p>CO-Founder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='solutions'>
+        <div className='solutions__banner'>
+          <div className='solutions__banner__icon'>
+            <img src={CounterIcon1} alt='clientes' />
+            <div className='solutions__banner__icon__texts'>
+              <h1>10+</h1>
+              <p>Clientes Satisfeitos</p>
+            </div>
+          </div>
+          <div className='solutions__banner__icon'>
+            <img src={CounterIcon2} alt='clientes' />
+            <div className='solutions__banner__icon__texts'>
+              <h1>10+</h1>
+              <p>Projetos Finalizador</p>
+            </div>
+          </div>
+          <div className='solutions__banner__icon'>
+            <img src={CounterIcon3} alt='clientes' />
+            <div className='solutions__banner__icon__texts'>
+              <h1>100+</h1>
+              <p>Protótipos</p>
+            </div>
+          </div>
+          <div className='solutions__banner__icon'>
+            <img src={CounterIcon4} alt='clientes' />
+            <div className='solutions__banner__icon__texts'>
+              <h1>327+</h1>
+              <p>Postagens</p>
+            </div>
+          </div>
+        </div>
+        <div className='solutions__container'>
+          <div className='solutions__container__texts'>
+            <div >
+              <img src={FrameBlue} alt='Frame' />
+              <p className=''>Benefícios</p>
+            </div>
+            <div >
+              <h1 >CRIANDO COM EXCELÊNCIA</h1>
+            </div>
+          </div>
+          <div className='solutions__container__button'>
+            <button >
+              <span>Contato</span>
+            </button>
           </div>
         </div>
       </section>
