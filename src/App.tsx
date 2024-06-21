@@ -1,5 +1,6 @@
 import Frame from './assets/img/frame.png'
 import FrameBlue from './assets/img/frame-blue.png'
+import Logo from './assets/img/logo.png'
 
 import FundoHero1 from './assets/img/fundo-hero1.jpg'
 import Office1 from './assets/img/office1.jpg'
@@ -274,6 +275,26 @@ function App() {
           </div>
         </div>
       </section>
+      <footer className='footer'>
+        <div className='footer__up'>
+          <div className='footer__up__info'>
+            <img className='footer__up__info__logo' src={Logo} alt="logo" />
+            <p>Transforme sua empresa em realidade digital com a Web First!</p>
+            
+          </div>
+          <div className='footer__up__solutions'>
+
+          </div>
+          <div className='footer__up__empty'>
+
+          </div>
+          <div className='footer__up__contact'></div>
+        </div>
+        <div className='footer__down'>
+
+        </div>
+
+      </footer>
     </>
   )
 }
