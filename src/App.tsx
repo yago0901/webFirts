@@ -210,7 +210,7 @@ function App() {
                   <img src={Founder} alt="" />
                 </div>
                 <div className='intelligence__center__right__founders__founder__description'>
-                  <h1>EDUARDO</h1>
+                  <h1>Eduardo Castro</h1>
                   <p>CO-Founder</p>
                 </div>
               </div>
@@ -260,27 +260,26 @@ function App() {
         </div>
         <div className='solutions__container'>
           <div className='solutions__container__texts'>
-            <div >
-              <img src={FrameBlue} alt='Frame' />
-              <p className=''>Benefícios</p>
+            <div className='solutions__container__texts__mini_tile'>
+              <img src={FrameBlue} alt='Frame' className='solutions__container__texts__mini_tile__image' />
+              <p>Algumas estratégias</p>
             </div>
-            <div >
-              <h1 >CRIANDO COM EXCELÊNCIA</h1>
-            </div>
+            <h1 >AS MELHORES SOLUÇÕES</h1>
           </div>
           <div className='solutions__container__button'>
-            <button >
+            <button className='solutions__container__button__btn'>
               <span>Contato</span>
             </button>
           </div>
         </div>
+        <h1>Carrossel</h1>
       </section>
       <footer className='footer'>
         <div className='footer__up'>
           <div className='footer__up__info'>
             <img className='footer__up__info__logo' src={Logo} alt="logo" />
             <p>Transforme sua empresa em realidade digital com a Web First!</p>
-            
+
           </div>
           <div className='footer__up__solutions'>
 

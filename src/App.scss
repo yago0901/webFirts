@@ -458,6 +458,7 @@
           }
         }
       }
+
       &__founders {
         display: flex;
         height: 15%;
@@ -594,7 +595,7 @@
   }
   &__container {
     width: 80%;
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -602,15 +603,79 @@
     &__texts {
       width: 90%;
       display: flex;
-      align-items: center;
-      background: rebeccapurple;
+      flex-direction: column;
+      gap: 2rem;
+
+      h1 {
+        font-size: 42px;
+        font-weight: bold;
+      }
+
+      &__mini_tile {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        gap: 0.5rem;
+
+        &__image {
+          width: 3%;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
     }
 
     &__button {
-      width: 10%;
-      height: 100%;
+      width: 9%;
+      height: 70%;
+      background: transparent;
+      padding: 0.3rem 1rem;
+      cursor: pointer;
+      perspective: 30rem;
+      border-radius: 3px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
       display: flex;
       align-items: center;
+      justify-content: center;
+
+      &__btn {
+        border: none;
+        font-size: 17px;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+
+    &__button span {
+      text-transform: uppercase;
+      position: relative; /* Necessário para `z-index` funcionar */
+      z-index: 2; /* Coloca o texto acima do efeito */
+    }
+
+    &__button::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 3px;
+      background: linear-gradient(
+        320deg,
+        rgba(60, 140, 252, 0.978),
+        rgba(128, 0, 128, 0.508)
+      );
+      z-index: 1;
+      transition: background 3s;
+    }
+
+    &__button:hover::before {
+      animation: rotate 1s;
+      transition: all 0.5s;
     }
   }
 }
